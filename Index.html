@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Apex Tech Performance: Ingeniería de optimización extrema para hardware y software de alto nivel. Velocidad sin compromisos."
+        />
+        <meta
+            name="keywords"
+            content="Optimización PC, Rendimiento Software, Tuning Hardware, Apex Tech, Estación de Trabajo"
+        />
+        <meta
+            property="og:title"
+            content="Apex Tech Performance | Speed & Power Engineering"
+        />
+        <meta
+            property="og:description"
+            content="Llevamos tu hardware y software al límite de su ingeniería. Optimizaciones de élite para flujos de trabajo críticos."
+        />
+        <meta property="og:type" content="website" />
+        <title>Apex Tech Performance | Speed & Power Engineering</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Botón flotante WhatsApp -->
+        <a
+            href="https://wa.me/58XXXXXXXXXX"
+            class="btn-whatsapp"
+            target="_blank"
+            rel="noopener"
+            aria-label="Consultoría Técnica Instantánea"
+        >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- HEADER -->
+        <header id="header">
+            <nav class="container">
+                <div
+                    class="logo"
+                    onclick="scrollToSection('inicio')"
+                    style="cursor: pointer"
+                >
+                    <span class="brand-apex">APEX</span
+                    ><span class="brand-tech">TECH</span>
+                </div>
+                <button
+                    class="nav-toggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#inicio" onclick="closeMenu()">Potencia</a>
+                    </li>
+                    <li>
+                        <a href="#servicios" onclick="closeMenu()">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#proceso" onclick="closeMenu()">Proceso</a>
+                    </li>
+                    <li>
+                        <a
+                            href="#contacto"
+                            class="nav-cta"
+                            onclick="closeMenu()"
+                            >Optimizar Sistema</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section id="inicio" class="hero">
+                <canvas id="particle-canvas"></canvas>
+                <div class="hero-glow"></div>
+
+                <div class="container hero-content reveal">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>Sistemas Operando a Máxima Capacidad</span>
+                    </div>
+
+                    <h1>
+                        RENDIMIENTO<br />
+                        <span class="text-gradient">SIN COMPROMISOS</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        Ingeniería de élite para optimizar tu infraestructura.
+                        Reducimos latencia, escalamos bases de datos y ajustamos
+                        a nivel de kernel.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn-main"
+                            >Auditoría Gratis</a
+                        >
+                        <a href="#servicios" class="btn-alt"
+                            >Ver Ingeniería <i class="fas fa-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICIOS -->
+            <section id="servicios" class="services">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>
+                            Ingeniería
+                            <span class="text-cyan">Especializada</span>
+                        </h2>
+                        <p>
+                            Nuestros arquitectos de sistemas diseccionan tu
+                            stack tecnológico para encontrar y eliminar cuellos
+                            de botella.
+                        </p>
+                    </div>
+
+                    <div class="grid-services">
+                        <article class="service-card reveal">
+                            <div class="card-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Hardware Tuning</h3>
+                            <p>
+                                Afinación profunda de parámetros físicos.
+                                Optimizamos registros de CPU, cache L3 y
+                                configuraciones de NUMA para exprimir cada ciclo
+                                de reloj.
+                            </p>
+                            <div class="card-bar"></div>
+                        </article>
+
+                        <article class="service-card reveal">
+                            <div class="card-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>OS Streamlining</h3>
+                            <p>
+                                Reconfiguración del Kernel Linux. Ajustamos
+                                schedulers, TCP/IP stack y file descriptors para
+                                manejar concurrencia extrema sin inmutarse.
+                            </p>
+                            <div class="card-bar"></div>
+                        </article>
+
+                        <article class="service-card reveal">
+                            <div class="card-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <h3>Code Optimization</h3>
+                            <p>
+                                Refactorización algorítmica. Análisis de
+                                complejidad Big O, reducción de memory leaks y
+                                paralelización de hilos asíncronos.
+                            </p>
+                            <div class="card-bar"></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+6
+            <!-- MÉTRICAS -->
+            <section class="metrics">
+                <div class="container">
+                    <div class="metrics-grid">
+                        <div class="metric-item reveal">
+                            <div
+                                class="metric-number"
+                                data-end="99.9"
+                                data-suffix="%"
+                            >
+                                0%
+                            </div>
+                            <div class="metric-label">Uptime Garantizado</div>
+                        </div>
+                        <div class="metric-item reveal">
+                            <div
+                                class="metric-number"
+                                data-prefix="-"
+                                data-end="40"
+                                data-suffix="%"
+                            >
+                                0%
+                            </div>
+                            <div class="metric-label">Latencia Promedio</div>
+                        </div>
+                        <div class="metric-item reveal">
+                            <div
+                                class="metric-number"
+                                data-prefix="+"
+                                data-end="200"
+                                data-suffix="%"
+                            >
+                                0%
+                            </div>
+                            <div class="metric-label">Throughput DB</div>
+                        </div>
+                        <div class="metric-item reveal">
+                            <div
+                                class="metric-number"
+                                data-end="24"
+                                data-suffix="/7"
+                            >
+                                0
+                            </div>
+                            <div class="metric-label">Soporte Técnico</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROCESO -->
+            <section id="proceso" class="process">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>
+                            Metodología <span class="text-orange">Apex</span>
+                        </h2>
+                    </div>
+
+                    <div class="process-grid">
+                        <div class="process-step reveal">
+                            <div class="step-number">01</div>
+                            <div class="step-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Análisis & Perfilado</h3>
+                            <p>
+                                Desplegamos sondas de monitoreo para crear un
+                                baseline. Identificamos latencias, bloqueos y
+                                saturación de recursos.
+                            </p>
+                        </div>
+                        <div class="process-step reveal">
+                            <div class="step-number">02</div>
+                            <div class="step-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Intervención Core</h3>
+                            <p>
+                                Aplicamos parches a nivel sistema y rediseñamos
+                                queries problemáticos. Implementamos caching
+                                distribuido si es necesario.
+                            </p>
+                        </div>
+                        <div class="process-step reveal">
+                            <div class="step-number">03</div>
+                            <div class="step-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Stress Testing</h3>
+                            <p>
+                                Sometemos el sistema a simulaciones de carga
+                                extrema para validar que las optimizaciones
+                                soportan picos reales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-line"></div>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contacto" class="contact">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info reveal">
+                            <h2>
+                                Inicia la<br /><span class="text-cyan"
+                                    >Secuencia</span
+                                >
+                            </h2>
+                            <p>
+                                El rendimiento mediocre cuesta clientes y
+                                dinero. Solicita una auditoría preliminar
+                                gratuita y descubre cuánto podemos mejorar tu
+                                sistema.
+                            </p>
+
+                            <div class="info-cards">
+                                <div class="info-card">
+                                    <div class="info-icon cyan">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Infraestructura Segura</h4>
+                                        <p>
+                                            Firmamos NDA antes de revisar un
+                                            solo log.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon orange">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Resultados Medibles</h4>
+                                        <p>
+                                            Métricas en tiempo real del antes y
+                                            después.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-box reveal">
+                            <div class="form-accent-bar"></div>
+                            <h3>Solicitud de Auditoría</h3>
+
+                            <form id="apex-form" class="main-form" novalidate>
+                                <!-- Honeypot anti-spam -->
+                                <div style="display: none" aria-hidden="true">
+                                    <input
+                                        type="text"
+                                        name="honeypot"
+                                        tabindex="-1"
+                                        autocomplete="off"
+                                    />
+                                </div>
+
+                                <div class="input-field">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        placeholder=" "
+                                        minlength="2"
+                                        maxlength="100"
+                                    />
+                                    <label for="name"
+                                        >Identificación Corporativa</label
+                                    >
+                                    <span
+                                        class="field-error"
+                                        id="name-error"
+                                    ></span>
+                                </div>
+
+                                <div class="input-field">
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        placeholder=" "
+                                    />
+                                    <label for="email"
+                                        >Enlace de Comunicación (Email)</label
+                                    >
+                                    <span
+                                        class="field-error"
+                                        id="email-error"
+                                    ></span>
+                                </div>
+
+                                <div class="input-field">
+                                    <textarea
+                                        id="msg"
+                                        name="msg"
+                                        rows="4"
+                                        required
+                                        placeholder=" "
+                                        minlength="10"
+                                        maxlength="2000"
+                                    ></textarea>
+                                    <label for="msg"
+                                        >Diagnóstico Preliminar (Mensaje)</label
+                                    >
+                                    <span
+                                        class="field-error"
+                                        id="msg-error"
+                                    ></span>
+                                </div>
+
+                                <button type="submit" class="btn-submit">
+                                    Iniciar Diagnóstico
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container footer-content">
+                <p>
+                    &copy; 2026 <strong>Apex Tech Performance</strong>.
+                    Ingeniería de CodeGhost Studio.
+                </p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn Corporativo"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" aria-label="GitHub de Proyectos"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
